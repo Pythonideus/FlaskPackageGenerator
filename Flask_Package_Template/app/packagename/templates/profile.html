@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    {% if userID %}
+    <h2>{{ username }}'s Profile<h2>
+    {% else %}
+    <h2>404: Profile Not Found<h2>
+    <h3>Sorry, that username doesn't exist.</h3>
+    {% endif %}
+  </div>
+
+ 
+{% endblock %}
